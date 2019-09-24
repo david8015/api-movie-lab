@@ -20,10 +20,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 .catch(onError);
 
 function onSuccess(response) {
-    console.log(response);
-    console.log(response.Search[0].Title);
-    console.log(response.Search[0].Year);
-
    let e = document.querySelector("#content");
 
 for (let i=0; i < response.Search.length; i++){
